@@ -207,6 +207,16 @@ p + p { margin-top: 1em; }
   border-color: #5fa2a8;
   color: var(--white);
 }
+.btn-blue {
+  background: var(--blue);
+  color: var(--white);
+  border-color: var(--blue);
+}
+.btn-blue:hover {
+  background: #4d7aa6;
+  border-color: #4d7aa6;
+  color: var(--white);
+}
 
 /* ── Navigation ── */
 .site-nav {
