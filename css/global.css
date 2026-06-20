@@ -217,7 +217,7 @@ p + p { margin-top: 1em; }
   z-index: 1000;
   height: var(--nav-height);
   background: var(--black);
-  border-bottom: 2px solid rgba(238,202,196,0.12);
+  border-bottom: 3px solid var(--blue);
   transition: background var(--transition), box-shadow var(--transition);
 }
 .site-nav.scrolled {
