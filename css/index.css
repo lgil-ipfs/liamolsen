@@ -20,65 +20,78 @@
   z-index: 0;
 }
 
-/* Salmon right-side accent panel — bold editorial split */
+/* Right-side image panel — diagonal split
+   TO ADD PHOTO: inside .hero-panel, replace .hero-panel-placeholder
+   with <img src="imgs/hero-photo.jpg" alt="" class="hero-panel-img" />   */
 .hero-panel {
   position: absolute;
-  inset: 0;
-  background: var(--salmon);
-  clip-path: polygon(62% 0%, 100% 0%, 100% 100%, 52% 100%);
-  opacity: 0.18;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 55%;
+  clip-path: polygon(14% 0%, 100% 0%, 100% 100%, 0% 100%);
+  overflow: hidden;
+  z-index: 1;
+}
+@media (max-width: 700px) {
+  .hero-panel { width: 100%; clip-path: none; opacity: 0.25; }
 }
 
-/* Subtle warm gradient on the left to add depth */
-.hero-bg::after {
+/* Left-edge fade — blends image into the dark text area */
+.hero-panel::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 25% 70%, rgba(114,69,74,0.5) 0%, transparent 55%);
-}
-
-/* Photo placeholder — right side of hero */
-/* Replace .hero-photo-slot with an <img> once the brand photo is ready */
-.hero-photo-slot {
-  position: absolute;
-  right: clamp(var(--space-lg), 6vw, 5rem);
-  top: 50%;
-  transform: translateY(-50%);
-  width: clamp(180px, 28vw, 400px);
-  aspect-ratio: 3 / 4;
-  background: linear-gradient(150deg, rgba(114,69,74,0.55) 0%, rgba(67,45,50,0.9) 100%);
-  border: 1.5px solid rgba(238,202,196,0.18);
-  border-radius: var(--radius-lg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: linear-gradient(to right, var(--black) 0%, transparent 40%);
   z-index: 2;
-  overflow: hidden;
-}
-/* Hide on small screens so text isn't crowded */
-@media (max-width: 700px) {
-  .hero-photo-slot { display: none; }
+  pointer-events: none;
 }
 
-.hero-photo-inner {
+/* Placeholder gradient — swap out once brand photo is supplied */
+.hero-panel-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(155deg, #5A393E 0%, var(--brown) 45%, var(--black) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
+  justify-content: center;
+  gap: 1rem;
+}
+.hero-panel-placeholder svg {
+  width: 52px;
+  height: 52px;
   color: var(--beige);
-  opacity: 0.35;
+  opacity: 0.2;
 }
-.hero-photo-inner svg {
-  width: 48px;
-  height: 48px;
-}
-.hero-photo-inner span {
+.hero-panel-placeholder span {
   font-family: var(--font-heading);
   font-size: 0.65rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.2em;
+  color: var(--beige);
+  opacity: 0.2;
   text-align: center;
+}
+
+/* Real photo (add this class to the <img> when ready) */
+.hero-panel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+/* Subtle warm glow on the left (text) side */
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 20% 75%, rgba(114,69,74,0.45) 0%, transparent 52%);
+  z-index: 2;
+  pointer-events: none;
 }
 
 /* Content sits at the bottom, leaving name space above */
