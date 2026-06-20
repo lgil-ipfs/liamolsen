@@ -226,7 +226,7 @@ p + p { margin-top: 1em; }
   right: 0;
   z-index: 1000;
   height: var(--nav-height);
-  background: var(--black);
+  background: var(--teal);
   transition: background var(--transition), box-shadow var(--transition);
 }
 .site-nav::after {
@@ -240,7 +240,7 @@ p + p { margin-top: 1em; }
   z-index: 1;
 }
 .site-nav.scrolled {
-  background: var(--black);
+  background: var(--teal);
   box-shadow: var(--shadow-md);
 }
 .site-nav.nav-light {
