@@ -217,8 +217,17 @@ p + p { margin-top: 1em; }
   z-index: 1000;
   height: var(--nav-height);
   background: var(--black);
-  border-bottom: 3px solid var(--blue);
   transition: background var(--transition), box-shadow var(--transition);
+}
+.site-nav::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: var(--blue);
+  z-index: 1;
 }
 .site-nav.scrolled {
   background: var(--black);
