@@ -37,17 +37,49 @@
   background: radial-gradient(ellipse at 25% 70%, rgba(114,69,74,0.5) 0%, transparent 55%);
 }
 
-/* Floating logo — top right, inside salmon zone */
-.hero-logo-badge {
+/* Photo placeholder — right side of hero */
+/* Replace .hero-photo-slot with an <img> once the brand photo is ready */
+.hero-photo-slot {
   position: absolute;
-  top: calc(var(--nav-height) + var(--space-xl));
   right: clamp(var(--space-lg), 6vw, 5rem);
-  width: clamp(140px, 18vw, 240px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(180px, 28vw, 400px);
+  aspect-ratio: 3 / 4;
+  background: linear-gradient(150deg, rgba(114,69,74,0.55) 0%, rgba(67,45,50,0.9) 100%);
+  border: 1.5px solid rgba(238,202,196,0.18);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 2;
-  opacity: 0.85;
-  mix-blend-mode: screen;
+  overflow: hidden;
 }
-.hero-logo-badge img { width: 100%; height: auto; }
+/* Hide on small screens so text isn't crowded */
+@media (max-width: 700px) {
+  .hero-photo-slot { display: none; }
+}
+
+.hero-photo-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--beige);
+  opacity: 0.35;
+}
+.hero-photo-inner svg {
+  width: 48px;
+  height: 48px;
+}
+.hero-photo-inner span {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  text-align: center;
+}
 
 /* Content sits at the bottom, leaving name space above */
 .hero-content {
@@ -92,13 +124,13 @@
 /* "FOR NORTH VAN" below name */
 .hero-for {
   font-family: var(--font-heading);
-  font-size: clamp(0.8rem, 1.8vw, 1.1rem);
+  font-size: clamp(1.4rem, 3.5vw, 2.8rem);
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.42em;
   color: var(--beige);
-  opacity: 0.5;
-  margin-top: var(--space-sm);
+  opacity: 0.6;
+  margin-top: var(--space-md);
   margin-bottom: var(--space-lg);
   display: block;
   max-width: none;
