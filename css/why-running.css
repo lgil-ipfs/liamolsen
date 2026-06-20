@@ -1,0 +1,145 @@
+/* ============================================================
+   why-running.css — Why I'm Running page styles
+   ============================================================ */
+
+/* ── LETTER LAYOUT ── */
+.letter-container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.letter-dateline {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--teal);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--beige);
+}
+
+.letter-greeting {
+  font-family: var(--font-body);
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--black);
+  margin-bottom: var(--space-lg);
+  font-style: italic;
+}
+
+.letter-body > p {
+  font-size: 1.1rem;
+  color: var(--brown);
+  line-height: 1.8;
+  margin-bottom: 1.5em;
+  max-width: none;
+}
+.letter-body > p em {
+  color: var(--salmon);
+  font-style: italic;
+}
+
+.letter-subheading {
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--salmon);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+.letter-pullquote {
+  margin: var(--space-xl) 0;
+  padding: var(--space-lg) var(--space-xl);
+  border-left: 4px solid var(--salmon);
+  background: var(--beige);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+.letter-pullquote blockquote p {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-style: italic;
+  color: var(--black);
+  line-height: 1.5;
+  max-width: none;
+  margin-bottom: 0;
+}
+
+.letter-sign-off {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--beige);
+}
+.letter-sign-off > p {
+  font-size: 1rem;
+  color: var(--brown);
+  margin-bottom: var(--space-md);
+  font-style: italic;
+}
+
+.letter-sig {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.letter-sig-name {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--salmon);
+}
+.letter-sig-title {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--brown);
+  opacity: 0.7;
+}
+
+/* ── THEME CARDS ── */
+.theme-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+.theme-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--salmon), var(--teal));
+}
+
+.theme-number {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--salmon);
+  opacity: 0.12;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.theme-card h3 {
+  color: var(--black);
+  margin-bottom: var(--space-sm);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+}
+.theme-card p {
+  font-size: 0.9rem;
+  color: var(--brown);
+  line-height: 1.65;
+  max-width: none;
+}

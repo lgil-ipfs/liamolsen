@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Liam Olsen for North Vancouver City Council</title>
+  <meta name="description" content="Get in touch with the Liam Olsen campaign. Send a message, connect on social media, or reach out for media and press inquiries." />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="logos/LiamNV_AltLogo_RedWhiteTeal.svg" alt="LiamOlsen North Van" /></a>
+      <ul class="nav-links" role="list">
+        <li><a href="about.html">About</a></li>
+        <li><a href="why-running.html">Why I'm Running</a></li>
+        <li><a href="priorities.html">Priorities</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="get-involved.html" class="btn btn-primary nav-cta">Join the Campaign</a>
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="mobile-menu" role="dialog" aria-label="Navigation">
+    <a href="about.html">About</a>
+    <a href="why-running.html">Why I'm Running</a>
+    <a href="priorities.html">Priorities</a>
+    <a href="community.html">Community</a>
+    <a href="get-involved.html">Get Involved</a>
+    <a href="contact.html">Contact</a>
+    <a href="get-involved.html" class="btn btn-primary">Join the Campaign</a>
+  </div>
+
+  <main>
+
+    <!-- ── PAGE HERO ── -->
+    <header class="page-hero" aria-labelledby="contact-page-heading">
+      <div class="container" style="position:relative; z-index:1;">
+        <span class="section-label beige">Reach Out</span>
+        <h1 id="contact-page-heading">Contact</h1>
+        <p class="hero-sub">Whether you have a question, want to share a thought, or want to connect — Liam and the campaign team want to hear from you.</p>
+      </div>
+    </header>
+
+    <!-- ── CONTACT SECTION ── -->
+    <section class="section" aria-labelledby="contact-form-heading">
+      <div class="container contact-grid">
+
+        <!-- Contact form -->
+        <div class="fade-in">
+          <span class="section-label">Send a Message</span>
+          <h2 id="contact-form-heading" class="h2 heading-on-light">We'd love to hear from you.</h2>
+          <span class="divider"></span>
+          <p style="color:var(--brown); margin-bottom:var(--space-lg);">
+            Have a question about the campaign? Want to share what's on your mind about North Van?
+            Just want to get in touch? Use the form below — we read every message.
+          </p>
+
+          <form class="campaign-form contact-form-styled" id="contact-form" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="c-first">First Name *</label>
+                <input type="text" id="c-first" name="first_name" class="form-control" required autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label for="c-last">Last Name *</label>
+                <input type="text" id="c-last" name="last_name" class="form-control" required autocomplete="family-name" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="c-email">Email Address *</label>
+              <input type="email" id="c-email" name="email" class="form-control" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="c-subject">Subject</label>
+              <select id="c-subject" name="subject" class="form-control">
+                <option value="">Select a topic...</option>
+                <option value="general">General question or comment</option>
+                <option value="policy">Policy / platform question</option>
+                <option value="volunteer">Volunteering</option>
+                <option value="event">Events / meet and greet</option>
+                <option value="media">Media or press inquiry</option>
+                <option value="sign">Lawn sign</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="c-message">Message *</label>
+              <textarea id="c-message" name="message" class="form-control" rows="5" required placeholder="What's on your mind?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Send Message</button>
+            <p class="form-note" style="color:var(--brown);">We aim to respond to all messages within 48 hours.</p>
+          </form>
+
+          <div id="contact-success" class="form-success form-success-light hidden">
+            <div class="form-success-icon" style="color:var(--teal);">✓</div>
+            <h3 style="color:var(--black);">Message received!</h3>
+            <p style="color:var(--brown); opacity:0.8;">Thanks for getting in touch. We'll be back to you within 48 hours.</p>
+          </div>
+        </div>
+
+        <!-- Contact info sidebar -->
+        <div class="contact-sidebar fade-in fade-in-delay-1">
+          <div class="contact-info-box">
+            <h3 class="h4 heading-on-dark">Campaign contact</h3>
+            <ul class="contact-info-list">
+              <li>
+                <span class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </span>
+                <div>
+                  <span class="label text-teal">Email</span>
+                  <a href="mailto:hello@liamolsen.ca" class="contact-info-value">hello@liamolsen.ca</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <div>
+                  <span class="label text-teal">Location</span>
+                  <span class="contact-info-value">North Vancouver, BC</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="contact-socials">
+              <h4 class="label text-teal" style="margin-bottom:var(--space-sm);">Follow the campaign</h4>
+              <div class="footer-socials">
+                <a href="#" aria-label="Facebook">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="#" aria-label="Twitter / X">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Press/media box -->
+          <div class="press-box">
+            <h3 class="h4" style="color:var(--black); margin-bottom:var(--space-xs);">Media & Press</h3>
+            <p style="color:var(--brown); font-size:0.9rem; max-width:none;">
+              For interview requests, campaign statements, or press inquiries,
+              please contact us via email with "MEDIA" in the subject line
+              and we'll respond as quickly as possible.
+            </p>
+            <a href="mailto:hello@liamolsen.ca?subject=MEDIA INQUIRY" class="priority-link mt-sm" style="display:inline-block;">
+              Email press team →
+            </a>
+          </div>
+
+          <!-- Quick links box -->
+          <div class="quick-links-box">
+            <h3 class="h4 heading-on-dark">Quick links</h3>
+            <ul class="contact-quick-links">
+              <li><a href="get-involved.html#volunteer">Volunteer with the campaign</a></li>
+              <li><a href="get-involved.html#lawn-sign">Request a lawn sign</a></li>
+              <li><a href="get-involved.html#host">Host a meet & greet</a></li>
+              <li><a href="get-involved.html#email-signup">Email updates</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GET INVOLVED CTA ── -->
+    <section class="cta-strip">
+      <div class="container text-center fade-in">
+        <h2>Not sure which way to connect?</h2>
+        <p>Start with email — we're a real team of North Van people who want to hear from you.</p>
+        <a href="mailto:hello@liamolsen.ca" class="btn btn-outline-light">Send Us an Email</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logos/LiamNV_MainLogo_White.svg" alt="Liam Olsen for North Vancouver City Council" class="footer-logo" />
+          <p>A campaign rooted in North Vancouver — for residents who want a city hall that listens, shows up, and delivers.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="Twitter / X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Navigate</h4><ul><li><a href="about.html">About Liam</a></li><li><a href="why-running.html">Why I'm Running</a></li><li><a href="priorities.html">Priorities</a></li><li><a href="community.html">Community</a></li><li><a href="get-involved.html">Get Involved</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="get-involved.html#volunteer">Volunteer</a></li><li><a href="get-involved.html#lawn-sign">Lawn Sign</a></li><li><a href="get-involved.html#event">Attend an Event</a></li><li><a href="get-involved.html#email-signup">Email Updates</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><p><a href="mailto:hello@liamolsen.ca">hello@liamolsen.ca</a><br /><br />North Vancouver, BC<br /><br /><a href="contact.html">Send a message →</a></p></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Liam Olsen for North Vancouver City Council. All rights reserved.</p>
+        <p>Authorized by the financial agent of Liam Olsen for North Vancouver City Council.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/global.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

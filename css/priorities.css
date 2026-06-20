@@ -1,0 +1,163 @@
+/* ============================================================
+   priorities.css — Priorities page styles
+   ============================================================ */
+
+/* ── INTRO ── */
+.priorities-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+@media (min-width: 768px) {
+  .priorities-intro-grid { grid-template-columns: 1.5fr 1fr; }
+}
+
+.priorities-intro-grid > div p { color: var(--brown); }
+.priorities-intro-grid > div h2 { margin-bottom: var(--space-sm); }
+.priorities-intro-grid > div .divider { margin-bottom: var(--space-md); }
+
+.priorities-nav-box {
+  background: var(--beige);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  position: sticky;
+  top: calc(var(--nav-height) + var(--space-md));
+}
+
+.priority-jump-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.priority-jump-nav li a {
+  font-size: 0.9rem;
+  color: var(--brown);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(114,69,74,0.12);
+  transition: color var(--transition);
+}
+.priority-jump-nav li:last-child a { border-bottom: none; }
+.priority-jump-nav li a::before {
+  content: '→';
+  color: var(--salmon);
+  flex-shrink: 0;
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+}
+.priority-jump-nav li a:hover { color: var(--salmon); }
+
+/* ── PRIORITY SECTION LAYOUT ── */
+.priority-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .priority-grid { grid-template-columns: 160px 1fr; align-items: start; }
+}
+@media (min-width: 960px) {
+  .priority-grid { grid-template-columns: 200px 1fr; gap: var(--space-2xl); }
+}
+
+.priority-grid-reverse {
+  /* On mobile, order stays the same. On desktop, text comes first */
+}
+@media (min-width: 768px) {
+  .priority-grid-reverse { grid-template-columns: 1fr 160px; }
+  .priority-grid-reverse .priority-section-icon { order: 2; }
+  .priority-grid-reverse .priority-section-text { order: 1; }
+}
+@media (min-width: 960px) {
+  .priority-grid-reverse { grid-template-columns: 1fr 200px; }
+}
+
+.priority-section-icon {
+  width: 100px;
+  height: 100px;
+  color: var(--teal);
+  background: rgba(116,182,188,0.1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  flex-shrink: 0;
+}
+.priority-section-icon--light {
+  background: rgba(238,202,196,0.1);
+  color: var(--beige);
+}
+.priority-section-icon svg {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .priority-section-icon {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+}
+
+.priority-section-text h2 { margin-bottom: var(--space-sm); }
+.priority-section-text .divider { margin-bottom: var(--space-md); }
+.priority-section-text p { color: var(--brown); margin-bottom: 1em; }
+.priority-section.bg-dark .priority-section-text p {
+  color: var(--beige);
+  opacity: 0.85;
+}
+
+.priority-subheading {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--salmon);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+}
+.priority-subheading-light {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--beige);
+  opacity: 0.7;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.priority-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.priority-bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--brown);
+  line-height: 1.55;
+}
+.priority-bullets li::before {
+  content: '—';
+  color: var(--salmon);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 0.05em;
+}
+.priority-bullets--light li {
+  color: var(--beige);
+  opacity: 0.8;
+}
+.priority-bullets--light li::before {
+  color: var(--teal);
+  opacity: 1;
+}

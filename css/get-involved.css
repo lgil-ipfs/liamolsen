@@ -1,0 +1,280 @@
+/* ============================================================
+   get-involved.css — Get Involved page styles
+   ============================================================ */
+
+/* ── INVOLVEMENT OPTIONS ── */
+.involvement-option {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.involvement-option:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.involvement-option-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: var(--space-lg);
+  background: var(--white);
+  border-top: 3px solid var(--salmon);
+  height: 100%;
+  cursor: pointer;
+}
+
+.involvement-icon {
+  width: 44px;
+  height: 44px;
+  color: var(--teal);
+  margin-bottom: 0.3rem;
+}
+.involvement-icon svg { width: 100%; height: 100%; }
+
+.involvement-option h3 { color: var(--black); }
+.involvement-option p { font-size: 0.9rem; color: var(--brown); flex: 1; max-width: none; }
+.involvement-cta {
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--salmon);
+  margin-top: auto;
+}
+
+/* ── FORM SECTIONS ── */
+.form-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+@media (min-width: 768px) {
+  .form-section { grid-template-columns: 1fr 1.2fr; }
+}
+
+.form-section-narrow {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.form-section-intro h2 { margin-bottom: var(--space-sm); }
+.form-section-intro .divider { margin-bottom: var(--space-md); }
+.form-section-intro p { color: var(--brown); }
+.bg-dark .form-section-intro p { color: var(--beige); opacity: 0.85; }
+
+.volunteer-roles {
+  margin-top: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.volunteer-roles li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--beige);
+  opacity: 0.8;
+}
+.volunteer-roles li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--teal);
+  flex-shrink: 0;
+}
+
+/* ── FORMS ── */
+.campaign-form {
+  background: rgba(238,202,196,0.06);
+  border: 1px solid rgba(238,202,196,0.12);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+}
+.bg-beige .campaign-form {
+  background: var(--white);
+  border-color: var(--beige);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0 var(--space-md);
+}
+@media (min-width: 480px) {
+  .form-row { grid-template-columns: 1fr 1fr; }
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+@media (min-width: 480px) {
+  .checkbox-group { grid-template-columns: 1fr 1fr; }
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--beige);
+  cursor: pointer;
+  opacity: 0.85;
+}
+.bg-beige .checkbox-label { color: var(--brown); }
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--teal);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.form-note {
+  font-size: 0.78rem;
+  color: var(--beige);
+  opacity: 0.5;
+  margin-top: var(--space-sm);
+  text-align: center;
+  max-width: none;
+}
+.bg-beige .form-note { color: var(--brown); }
+
+.form-success {
+  background: rgba(116,182,188,0.1);
+  border: 1px solid rgba(116,182,188,0.3);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  text-align: center;
+}
+.form-success-icon {
+  font-size: 2.5rem;
+  color: var(--teal);
+  margin-bottom: var(--space-sm);
+}
+.form-success h3 {
+  color: var(--beige);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.form-success p { color: var(--beige); opacity: 0.8; max-width: none; }
+.bg-beige .form-success {
+  background: rgba(116,182,188,0.08);
+}
+.bg-beige .form-success h3 { color: var(--black); }
+.bg-beige .form-success p { color: var(--brown); opacity: 0.8; }
+
+/* ── EVENTS LIST ── */
+.event-card {
+  display: flex;
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--space-md);
+  border-left: 4px solid var(--teal);
+}
+
+.event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.event-month {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--teal);
+}
+.event-day {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--black);
+  line-height: 1;
+  margin-top: 0.2rem;
+}
+
+.event-details h3 { color: var(--black); margin-bottom: 0.5rem; }
+.event-details p { color: var(--brown); font-size: 0.9rem; max-width: none; }
+
+/* ── HOST SECTION ── */
+.host-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+@media (min-width: 768px) {
+  .host-grid { grid-template-columns: 1.2fr 1fr; }
+}
+
+.host-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+.host-step {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+.host-step-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(238,202,196,0.12);
+  border: 1.5px solid rgba(238,202,196,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--teal);
+  flex-shrink: 0;
+}
+.host-step strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--beige);
+  margin-bottom: 0.3rem;
+}
+.host-step p { font-size: 0.88rem; color: var(--beige); opacity: 0.7; max-width: none; }
+
+/* ── EMAIL SIGNUP FORM ── */
+.email-signup-form { max-width: 500px; margin: 0 auto; }
+.email-input-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.email-signup-input {
+  flex: 1;
+  min-width: 200px;
+  background: var(--white);
+  border-color: var(--white);
+}
+.email-signup-input::placeholder { color: rgba(67,45,50,0.5); }
+
+.form-success-inline p {
+  font-size: 1.05rem;
+  font-weight: 600;
+}

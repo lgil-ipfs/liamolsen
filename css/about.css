@@ -1,0 +1,126 @@
+/* ============================================================
+   about.css — About Liam page styles
+   ============================================================ */
+
+/* ── BIO INTRO ── */
+.bio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+@media (min-width: 768px) {
+  .bio-grid { grid-template-columns: 1fr 1.4fr; align-items: center; }
+}
+
+.bio-photo {
+  position: relative;
+  aspect-ratio: 3/4;
+  max-width: 420px;
+}
+
+.bio-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(145deg, var(--beige) 0%, var(--brown) 100%);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.bio-intro-text h2 { margin-bottom: var(--space-sm); }
+.bio-intro-text .divider { margin-bottom: var(--space-md); }
+.bio-intro-text p { color: var(--brown); }
+
+/* ── BACKGROUND BLOCKS ── */
+.background-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.background-block {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+@media (min-width: 640px) {
+  .background-block {
+    grid-template-columns: 64px 1fr;
+    align-items: start;
+  }
+}
+
+.background-block-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--teal);
+  padding: 10px;
+  background: rgba(116,182,188,0.1);
+  border-radius: var(--radius-sm);
+}
+.background-block-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.background-block h3 {
+  margin-bottom: 0.75rem;
+}
+.background-block p { color: var(--brown); }
+
+/* ── NORTH VAN CONNECTION ── */
+.connection-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .connection-grid { grid-template-columns: 1.3fr 1fr; }
+}
+
+.connection-facts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.fact-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  background: rgba(238,202,196,0.07);
+  border: 1px solid rgba(238,202,196,0.15);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+.fact-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.fact-card strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--beige);
+  margin-bottom: 0.3rem;
+}
+.fact-card p {
+  font-size: 0.88rem;
+  color: var(--beige);
+  opacity: 0.7;
+  line-height: 1.5;
+  max-width: none;
+}
