@@ -51,6 +51,77 @@
       </div>
     </header>
 
+    <!-- ── SIGNUP FORM ── -->
+    <section id="signup" class="signup-section" aria-labelledby="signup-heading">
+      <div class="container">
+        <div class="signup-wrap fade-in">
+          <h2 id="signup-heading" class="signup-title">Sign Up to Support Liam</h2>
+          <form class="signup-form" id="signup-form" novalidate aria-label="Campaign sign-up form">
+            <div class="signup-row">
+              <div class="signup-field">
+                <label for="s-first">First Name</label>
+                <input type="text" id="s-first" name="first_name" class="signup-input" placeholder="Jane" required autocomplete="given-name" />
+              </div>
+              <div class="signup-field">
+                <label for="s-last">Last Name</label>
+                <input type="text" id="s-last" name="last_name" class="signup-input" placeholder="Smith" required autocomplete="family-name" />
+              </div>
+            </div>
+            <div class="signup-field">
+              <label for="s-email">Email</label>
+              <input type="email" id="s-email" name="email" class="signup-input" placeholder="jane@example.com" required autocomplete="email" />
+            </div>
+            <div class="signup-field">
+              <label for="s-address">Address</label>
+              <input type="text" id="s-address" name="address" class="signup-input" placeholder="123 Main St" autocomplete="street-address" />
+            </div>
+            <div class="signup-row">
+              <div class="signup-field">
+                <label for="s-postal">Postal Code</label>
+                <input type="text" id="s-postal" name="postal_code" class="signup-input" placeholder="V7M 1A1" autocomplete="postal-code" />
+              </div>
+              <div class="signup-field">
+                <label for="s-phone">Phone Number</label>
+                <input type="tel" id="s-phone" name="phone" class="signup-input" placeholder="(604) 555-0000" autocomplete="tel" />
+              </div>
+            </div>
+            <div class="signup-field">
+              <label for="s-birthday">Birthday (DD/MM/YYYY)</label>
+              <input type="text" id="s-birthday" name="birthday" class="signup-input" placeholder="31/12/1990" />
+            </div>
+            <div class="signup-checks">
+              <label class="signup-check">
+                <input type="checkbox" name="consent_email" />
+                I consent to receive emails from the Liam Olsen campaign
+              </label>
+              <label class="signup-check">
+                <input type="checkbox" name="volunteer" />
+                I would like to volunteer
+              </label>
+              <label class="signup-check">
+                <input type="checkbox" name="donate" />
+                I would like to donate
+              </label>
+              <label class="signup-check">
+                <input type="checkbox" name="lives_in_northvan" />
+                I live in the City of North Vancouver
+              </label>
+              <label class="signup-check">
+                <input type="checkbox" name="eligible_voter" />
+                I am eligible to vote in North Vancouver. I understand that to vote in the municipal election I must be a Canadian citizen or permanent resident, be at least 18 years of age, and be a resident of the City of North Vancouver by election day.
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Sign Up</button>
+          </form>
+          <div id="signup-success" class="signup-success hidden">
+            <div class="signup-success-icon" aria-hidden="true">✓</div>
+            <h3>Thanks for signing up!</h3>
+            <p>We'll be in touch soon. Welcome to the campaign.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ── WAYS TO HELP ── -->
     <section class="section" aria-labelledby="ways-heading">
       <div class="container">

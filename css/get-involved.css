@@ -2,6 +2,117 @@
    get-involved.css — Get Involved page styles
    ============================================================ */
 
+/* ── SIGNUP FORM (below hero) ── */
+.signup-section {
+  background: var(--white);
+  padding: var(--space-2xl) 0;
+  border-bottom: 1px solid var(--beige);
+}
+
+.signup-wrap {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.signup-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--black);
+  letter-spacing: 0.03em;
+  margin-bottom: var(--space-lg);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.signup-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+}
+@media (min-width: 480px) {
+  .signup-row { grid-template-columns: 1fr 1fr; }
+}
+
+.signup-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.signup-field label {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brown);
+}
+
+.signup-input {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #cdd1d8;
+  border-radius: var(--radius-sm);
+  background: #fff;
+  color: var(--black);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  width: 100%;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.signup-input:focus {
+  outline: none;
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(116,182,188,0.18);
+}
+.signup-input::placeholder { color: #b0b8c4; }
+
+.signup-checks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.signup-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--black);
+  line-height: 1.55;
+  cursor: pointer;
+}
+.signup-check input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-top: 0.18rem;
+  accent-color: var(--teal);
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.signup-success {
+  text-align: center;
+  padding: var(--space-xl);
+  border: 1px solid rgba(116,182,188,0.3);
+  border-radius: var(--radius-lg);
+  background: rgba(116,182,188,0.06);
+}
+.signup-success-icon {
+  font-size: 2.5rem;
+  color: var(--teal);
+  margin-bottom: var(--space-sm);
+}
+.signup-success h3 { color: var(--black); margin-bottom: 0.4rem; }
+.signup-success p { color: var(--brown); }
+
 /* ── INVOLVEMENT OPTIONS ── */
 .involvement-option {
   border-radius: var(--radius-md);
