@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" fill="#432D32"/>
+  <!-- "L" in brand beige -->
+  <text x="1" y="25" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="21" fill="#FEEAE7">L</text>
+  <!-- "O" in brand salmon -->
+  <text x="15" y="25" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="21" fill="#EC6059">O</text>
+  <!-- Teal accent line at bottom -->
+  <rect x="0" y="29" width="32" height="3" fill="#74B6BC"/>
+</svg>
