@@ -81,6 +81,70 @@
       </div>
     </section>
 
+    <!-- ── HOME SIGNUP ── -->
+    <section class="home-signup" aria-labelledby="home-signup-heading">
+      <div class="container">
+        <div class="home-signup-grid">
+          <div class="home-signup-intro fade-in">
+            <span class="section-label">Join the Campaign</span>
+            <h2 id="home-signup-heading" class="h2">Sign up to support Liam.</h2>
+            <span class="divider"></span>
+            <p>Whether you want to volunteer, donate, or simply stay informed — every sign-up strengthens the campaign for North Vancouver.</p>
+            <p>Fill out the form and we'll connect you with the right way to get involved.</p>
+          </div>
+          <div class="hs-card fade-in fade-in-delay-1">
+            <form class="hs-form" id="home-signup-form" novalidate aria-label="Campaign sign-up">
+              <div class="hs-row">
+                <div class="hs-field">
+                  <label for="hs-first">First Name</label>
+                  <input type="text" id="hs-first" name="first_name" class="hs-input" placeholder="Jane" required autocomplete="given-name" />
+                </div>
+                <div class="hs-field">
+                  <label for="hs-last">Last Name</label>
+                  <input type="text" id="hs-last" name="last_name" class="hs-input" placeholder="Smith" required autocomplete="family-name" />
+                </div>
+              </div>
+              <div class="hs-field">
+                <label for="hs-email">Email</label>
+                <input type="email" id="hs-email" name="email" class="hs-input" placeholder="jane@example.com" required autocomplete="email" />
+              </div>
+              <div class="hs-field">
+                <label for="hs-address">Address</label>
+                <input type="text" id="hs-address" name="address" class="hs-input" placeholder="123 Main St" autocomplete="street-address" />
+              </div>
+              <div class="hs-row">
+                <div class="hs-field">
+                  <label for="hs-postal">Postal Code</label>
+                  <input type="text" id="hs-postal" name="postal_code" class="hs-input" placeholder="V7M 1A1" autocomplete="postal-code" />
+                </div>
+                <div class="hs-field">
+                  <label for="hs-phone">Phone Number</label>
+                  <input type="tel" id="hs-phone" name="phone" class="hs-input" placeholder="(604) 555-0000" autocomplete="tel" />
+                </div>
+              </div>
+              <div class="hs-field">
+                <label for="hs-birthday">Birthday (DD/MM/YYYY)</label>
+                <input type="text" id="hs-birthday" name="birthday" class="hs-input" placeholder="31/12/1990" />
+              </div>
+              <div class="hs-checks">
+                <label class="hs-check"><input type="checkbox" name="consent_email" /> I consent to receive emails from the Liam Olsen campaign</label>
+                <label class="hs-check"><input type="checkbox" name="volunteer" /> I would like to volunteer</label>
+                <label class="hs-check"><input type="checkbox" name="donate" /> I would like to donate</label>
+                <label class="hs-check"><input type="checkbox" name="lives_in_northvan" /> I live in the City of North Vancouver</label>
+                <label class="hs-check"><input type="checkbox" name="eligible_voter" /> I am eligible to vote in North Vancouver. I understand that to vote in the municipal election I must be a Canadian citizen or permanent resident, at least 18 years of age, and a resident of the City of North Vancouver by election day.</label>
+              </div>
+              <button type="submit" class="btn btn-primary full-width" style="margin-top:0.5rem;">Sign Up</button>
+            </form>
+            <div id="home-signup-success" class="hs-success hidden">
+              <div class="hs-success-icon" aria-hidden="true">✓</div>
+              <h3>You're signed up!</h3>
+              <p>Thanks for joining the campaign. We'll be in touch soon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ── TRUST STRIP ── -->
     <section class="trust-strip section-sm" aria-label="Key credentials">
       <div class="container">
@@ -175,11 +239,11 @@
           </li>
           <li class="priority-card fade-in fade-in-delay-1">
             <div class="priority-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="6" width="22" height="13" rx="2"/><path d="M16 6V4a1 1 0 00-1-1H9a1 1 0 00-1 1v2"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="19" r="2"/><path d="M1 12h22"/></svg>
             </div>
-            <h3 class="h4">Community Spaces That Connect Us</h3>
-            <p>Investing in parks, gathering places, and the community infrastructure that makes us more than just neighbours.</p>
-            <a href="priorities.html#community-spaces" class="priority-link">Learn more →</a>
+            <h3 class="h4">Getting North Van Moving</h3>
+            <p>Reliable transit, safe cycling routes, and connected infrastructure so every resident can get around without a car.</p>
+            <a href="priorities.html#transit" class="priority-link">Learn more →</a>
           </li>
           <li class="priority-card fade-in fade-in-delay-2">
             <div class="priority-icon" aria-hidden="true">
@@ -225,9 +289,9 @@
           <p>
             Liam Olsen is a North Vancouver local with deep roots in this community
             and a professional background in public policy and civic organizing.
-            He has spent years working alongside community organizations, youth groups,
-            and local institutions — building real connections and learning what it takes
-            to get things done.
+            He served as <strong>National Youth Director for the Liberal Party of Canada
+            under Prime Minister Mark Carney</strong> — bringing national-level leadership
+            experience back home to North Van.
           </p>
           <p>
             Liam brings a grounded, practical approach to leadership: listen first,
