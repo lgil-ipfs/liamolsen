@@ -252,7 +252,7 @@ p + p { margin-top: 1em; }
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--gold);
+  color: var(--white);
   opacity: 0.9;
   transition: opacity var(--transition), transform var(--transition);
 }
