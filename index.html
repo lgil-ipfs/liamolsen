@@ -29,7 +29,7 @@
     </div>
   </div>
 
-  <nav class="site-nav" aria-label="Main navigation">
+  <nav class="site-nav nav-light" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo" aria-label="Liam Olsen home">
         <img src="logos/Alt no Bkrd.png" alt="LiamOlsen North Van" />
@@ -88,8 +88,8 @@
           Local leadership rooted in community, driven by purpose.
         </p>
         <div class="hero-actions">
-          <a href="get-involved.html" class="btn btn-primary">Join the Campaign</a>
-          <a href="about.html" class="btn btn-outline-light">Meet Liam</a>
+          <a href="#donate" class="btn btn-blue">Donate</a>
+          <a href="get-involved.html" class="btn btn-outline-salmon">Join the Campaign</a>
         </div>
       </div>
       <div class="hero-scroll-hint" aria-hidden="true">
@@ -206,25 +206,74 @@
       </div>
     </section>
 
+    <!-- ── DONATE ── -->
+    <section id="donate" class="section donate-section bg-beige" aria-labelledby="donate-heading">
+      <div class="container donate-grid">
+        <div class="donate-text fade-in">
+          <span class="section-label salmon">Support the Campaign</span>
+          <h2 id="donate-heading" class="h1 heading-on-light">Support Liam's campaign.</h2>
+          <span class="divider"></span>
+          <p>
+            This campaign is funded by North Vancouver residents, not developers or outside interests.
+            Every dollar goes directly toward reaching voters — door-knocking, lawn signs,
+            local events, and getting Liam's message in front of your neighbours.
+          </p>
+          <ul class="donate-trust-notes" role="list">
+            <li><span class="donate-check" aria-hidden="true">✓</span> Secure donation processing</li>
+            <li><span class="donate-check" aria-hidden="true">✓</span> Local donations support local outreach</li>
+            <li><span class="donate-check" aria-hidden="true">✓</span> Authorized by the financial agent of Liam Olsen for North Vancouver City Council</li>
+          </ul>
+        </div>
+        <div class="hs-card donate-card fade-in fade-in-delay-1">
+          <form class="donate-form" id="donate-form" novalidate aria-label="Donate to the campaign">
+            <span class="donate-form-label">Choose an amount</span>
+            <div class="donate-amounts" role="group" aria-label="Donation amount">
+              <button type="button" class="donate-amount-btn" data-amount="10">$10</button>
+              <button type="button" class="donate-amount-btn" data-amount="25">$25</button>
+              <button type="button" class="donate-amount-btn is-active" data-amount="50">$50</button>
+              <button type="button" class="donate-amount-btn" data-amount="100">$100</button>
+              <button type="button" class="donate-amount-btn donate-amount-custom" data-amount="custom">Custom</button>
+            </div>
+            <div class="hs-field donate-custom-field hidden" id="donate-custom-field">
+              <label for="donate-custom-amount">Custom amount (CAD)</label>
+              <input type="number" id="donate-custom-amount" name="custom_amount" class="hs-input" placeholder="75" min="1" step="1" inputmode="numeric" />
+            </div>
+            <label class="hs-check donate-recurring">
+              <input type="checkbox" name="recurring" id="donate-recurring" />
+              Make this a monthly donation
+            </label>
+            <!-- Payment processing not yet connected. Replace this button's
+                 behaviour with a real processor (e.g. CanadaHelps, NationBuilder,
+                 Stripe) before launch — see js/index.js for the placeholder logic. -->
+            <a href="mailto:hello@liamolsen.ca?subject=Donation%20—%20%2450" id="donate-submit" class="btn btn-blue full-width">Donate Now — $50</a>
+            <p class="donate-fineprint">
+              Online donation processing is coming soon. For now this will open an email to the campaign
+              so we can follow up on your contribution directly.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <!-- ── WHY I'M RUNNING ── -->
-    <section class="section why-preview bg-dark" aria-labelledby="why-heading">
+    <section class="section why-preview" aria-labelledby="why-heading">
       <div class="container why-grid">
         <div class="why-text fade-in">
-          <span class="section-label beige">Why I'm Running</span>
-          <h2 id="why-heading" class="h1 heading-on-dark">North Vancouver deserves a council that listens.</h2>
-          <span class="divider beige"></span>
-          <p class="text-light" style="opacity:0.85;">
+          <span class="section-label">Why I'm Running</span>
+          <h2 id="why-heading" class="h1 heading-on-light">North Vancouver deserves a council that listens.</h2>
+          <span class="divider"></span>
+          <p>
             I grew up watching this city grow and change — and I've been part of shaping it.
             I'm running because I believe local government should be close to the people it serves.
             Decisions about our neighbourhoods, our community spaces, and our future shouldn't feel
             distant or disconnected.
           </p>
-          <p class="text-light" style="opacity:0.85;">
+          <p>
             North Vancouver has real strengths and real pressures. I want to bring practical,
             grounded leadership to city hall — someone who has done the work,
             knows the community, and will show up every time.
           </p>
-          <a href="why-running.html" class="btn btn-outline-light mt-lg">Read My Full Statement</a>
+          <a href="why-running.html" class="btn btn-outline-salmon mt-lg">Read My Full Statement</a>
         </div>
         <div class="why-visual fade-in fade-in-delay-1" aria-hidden="true">
           <div class="why-quote">
@@ -322,89 +371,40 @@
     </section>
 
     <!-- ── COMMUNITY PRESENCE ── -->
-    <section class="section community-preview bg-brown" aria-labelledby="community-heading">
+    <section class="section community-preview bg-beige" aria-labelledby="community-heading">
       <div class="container">
         <div class="section-intro fade-in">
-          <span class="section-label beige">On the Ground</span>
-          <h2 id="community-heading" class="h2 heading-on-dark">Listening in North Vancouver.</h2>
-          <p class="text-light" style="opacity:0.8; max-width:52ch;">
+          <span class="section-label salmon">On the Ground</span>
+          <h2 id="community-heading" class="h2 heading-on-light">Listening in North Vancouver.</h2>
+          <p style="max-width:52ch;">
             From neighbourhood conversations to community events, Liam is out in the city —
             meeting residents, hearing concerns, and showing up where it counts.
           </p>
         </div>
         <div class="community-photos mt-lg" aria-label="Community photos">
           <div class="community-photo fade-in">
-            <div class="community-photo-fill" style="background: linear-gradient(135deg, var(--black) 0%, #5A393E 100%);">
+            <div class="community-photo-fill" style="background: linear-gradient(135deg, var(--brown) 0%, var(--teal) 100%);">
               <span class="community-photo-caption">Community conversations</span>
             </div>
           </div>
           <div class="community-photo fade-in fade-in-delay-1">
-            <div class="community-photo-fill" style="background: linear-gradient(135deg, #5A393E 0%, var(--brown) 100%);">
+            <div class="community-photo-fill" style="background: linear-gradient(135deg, var(--teal) 0%, var(--salmon) 100%);">
               <span class="community-photo-caption">Local events</span>
             </div>
           </div>
           <div class="community-photo fade-in fade-in-delay-2">
-            <div class="community-photo-fill" style="background: linear-gradient(135deg, var(--brown) 0%, #914C4E 100%);">
+            <div class="community-photo-fill" style="background: linear-gradient(135deg, var(--salmon) 0%, var(--beige) 100%);">
               <span class="community-photo-caption">Neighbourhood visits</span>
             </div>
           </div>
           <div class="community-photo fade-in fade-in-delay-3">
-            <div class="community-photo-fill" style="background: linear-gradient(135deg, #914C4E 0%, var(--salmon) 80%);">
+            <div class="community-photo-fill" style="background: linear-gradient(135deg, var(--beige) 0%, var(--brown) 100%);">
               <span class="community-photo-caption">Campaign trail</span>
             </div>
           </div>
         </div>
         <div class="mt-lg fade-in">
-          <a href="community.html" class="btn btn-outline-light">See What's Happening</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── DONATE ── -->
-    <section id="donate" class="section donate-section bg-beige" aria-labelledby="donate-heading">
-      <div class="container donate-grid">
-        <div class="donate-text fade-in">
-          <span class="section-label salmon">Support the Campaign</span>
-          <h2 id="donate-heading" class="h1 heading-on-light">Support Liam's campaign.</h2>
-          <span class="divider"></span>
-          <p>
-            This campaign is funded by North Vancouver residents, not developers or outside interests.
-            Every dollar goes directly toward reaching voters — door-knocking, lawn signs,
-            local events, and getting Liam's message in front of your neighbours.
-          </p>
-          <ul class="donate-trust-notes" role="list">
-            <li><span class="donate-check" aria-hidden="true">✓</span> Secure donation processing</li>
-            <li><span class="donate-check" aria-hidden="true">✓</span> Local donations support local outreach</li>
-            <li><span class="donate-check" aria-hidden="true">✓</span> Authorized by the financial agent of Liam Olsen for North Vancouver City Council</li>
-          </ul>
-        </div>
-        <div class="hs-card donate-card fade-in fade-in-delay-1">
-          <form class="donate-form" id="donate-form" novalidate aria-label="Donate to the campaign">
-            <span class="donate-form-label">Choose an amount</span>
-            <div class="donate-amounts" role="group" aria-label="Donation amount">
-              <button type="button" class="donate-amount-btn" data-amount="10">$10</button>
-              <button type="button" class="donate-amount-btn" data-amount="25">$25</button>
-              <button type="button" class="donate-amount-btn is-active" data-amount="50">$50</button>
-              <button type="button" class="donate-amount-btn" data-amount="100">$100</button>
-              <button type="button" class="donate-amount-btn donate-amount-custom" data-amount="custom">Custom</button>
-            </div>
-            <div class="hs-field donate-custom-field hidden" id="donate-custom-field">
-              <label for="donate-custom-amount">Custom amount (CAD)</label>
-              <input type="number" id="donate-custom-amount" name="custom_amount" class="hs-input" placeholder="75" min="1" step="1" inputmode="numeric" />
-            </div>
-            <label class="hs-check donate-recurring">
-              <input type="checkbox" name="recurring" id="donate-recurring" />
-              Make this a monthly donation
-            </label>
-            <!-- Payment processing not yet connected. Replace this button's
-                 behaviour with a real processor (e.g. CanadaHelps, NationBuilder,
-                 Stripe) before launch — see js/index.js for the placeholder logic. -->
-            <a href="mailto:hello@liamolsen.ca?subject=Donation%20—%20%2450" id="donate-submit" class="btn btn-blue full-width">Donate Now — $50</a>
-            <p class="donate-fineprint">
-              Online donation processing is coming soon. For now this will open an email to the campaign
-              so we can follow up on your contribution directly.
-            </p>
-          </form>
+          <a href="community.html" class="btn btn-outline-salmon">See What's Happening</a>
         </div>
       </div>
     </section>
@@ -416,6 +416,7 @@
           <h2 id="cta-heading">Ready to make a difference in North Van?</h2>
           <p>This campaign is built by neighbours, for neighbours. Every conversation counts — and yours matters.</p>
           <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+            <a href="#donate" class="btn btn-outline-light">Donate</a>
             <a href="get-involved.html" class="btn btn-outline-light">Volunteer</a>
             <a href="get-involved.html#lawn-sign" class="btn btn-outline-light">Get a Lawn Sign</a>
             <a href="get-involved.html#email-signup" class="btn btn-outline-light">Stay in the Loop</a>

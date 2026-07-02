@@ -274,7 +274,8 @@ p + p { margin-top: 1em; }
   right: 0;
   z-index: 1000;
   height: var(--nav-height);
-  background: var(--black);
+  background: var(--white);
+  border-bottom: 2px solid var(--beige);
   transition: background var(--transition), box-shadow var(--transition);
 }
 .site-nav::after {
@@ -288,14 +289,6 @@ p + p { margin-top: 1em; }
   z-index: 1;
 }
 .site-nav.scrolled {
-  background: var(--black);
-  box-shadow: var(--shadow-md);
-}
-.site-nav.nav-light {
-  background: var(--white);
-  border-bottom: 2px solid var(--beige);
-}
-.site-nav.nav-light.scrolled {
   box-shadow: var(--shadow-sm);
 }
 .nav-inner {
@@ -396,7 +389,7 @@ p + p { margin-top: 1em; }
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--black);
+  background: var(--white);
   z-index: 999;
   flex-direction: column;
   align-items: center;
@@ -413,7 +406,7 @@ p + p { margin-top: 1em; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--white);
+  color: var(--black);
   transition: color var(--transition);
 }
 .nav-mobile a:hover { color: var(--salmon); }
@@ -541,7 +534,7 @@ p + p { margin-top: 1em; }
 
 /* ── Page hero (inner pages) ── */
 .page-hero {
-  background: var(--black);
+  background: var(--white);
   padding: calc(var(--nav-height) + var(--subheader-height) + var(--space-2xl)) 0 var(--space-2xl);
   position: relative;
   overflow: hidden;
@@ -551,7 +544,7 @@ p + p { margin-top: 1em; }
   position: absolute;
   top: 0; right: 0; bottom: 0;
   width: 45%;
-  background: linear-gradient(135deg, var(--brown) 0%, var(--black) 100%);
+  background: linear-gradient(135deg, var(--beige) 0%, var(--brown) 100%);
   clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
   opacity: 0.5;
 }
@@ -560,14 +553,14 @@ p + p { margin-top: 1em; }
   margin-bottom: var(--space-sm);
 }
 .page-hero h1 {
-  color: var(--white);
+  color: var(--salmon);
   font-size: clamp(2.8rem, 6vw, 5rem);
   margin-bottom: var(--space-md);
 }
 .page-hero .hero-sub {
   font-size: 1.15rem;
-  color: var(--beige);
-  opacity: 0.85;
+  color: var(--black);
+  opacity: 0.78;
   max-width: 50ch;
   font-family: var(--font-body);
   font-weight: 300;

@@ -97,10 +97,11 @@
   display: flex;
   align-items: flex-start;
   gap: var(--space-sm);
-  background: rgba(238,202,196,0.07);
-  border: 1px solid rgba(238,202,196,0.15);
+  background: var(--white);
+  border: 1px solid rgba(114,69,74,0.15);
   border-radius: var(--radius-md);
   padding: var(--space-md);
+  box-shadow: var(--shadow-sm);
 }
 .fact-icon {
   font-size: 1.6rem;
@@ -114,13 +115,13 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--beige);
+  color: var(--brown);
   margin-bottom: 0.3rem;
 }
 .fact-card p {
   font-size: 0.88rem;
-  color: var(--beige);
-  opacity: 0.7;
+  color: var(--brown);
+  opacity: 0.8;
   line-height: 1.5;
   max-width: none;
 }
