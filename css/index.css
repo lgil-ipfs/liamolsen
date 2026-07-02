@@ -320,6 +320,96 @@
 .hs-success h3 { color: var(--black); margin-bottom: 0.4rem; }
 .hs-success p  { color: var(--brown); font-size: 0.9rem; }
 
+/* ── DONATE ── */
+.donate-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+@media (min-width: 900px) {
+  .donate-grid { grid-template-columns: 1.1fr 1fr; }
+}
+
+.donate-text p { color: var(--brown); }
+
+.donate-trust-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: var(--space-md);
+}
+.donate-trust-notes li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  color: var(--black);
+  line-height: 1.5;
+}
+.donate-check {
+  flex-shrink: 0;
+  color: var(--teal);
+  font-weight: 700;
+}
+
+.donate-card { background: var(--white); }
+
+.donate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.donate-form-label {
+  font-family: var(--font-heading);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--brown);
+}
+
+.donate-amounts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+}
+@media (min-width: 420px) {
+  .donate-amounts { grid-template-columns: repeat(5, 1fr); }
+}
+
+.donate-amount-btn {
+  padding: 0.7rem 0.5rem;
+  border: 1.5px solid var(--beige);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  color: var(--black);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition), color var(--transition);
+}
+.donate-amount-btn:hover { border-color: var(--teal); }
+.donate-amount-btn.is-active {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: var(--white);
+}
+.donate-amount-custom { font-size: 0.75rem; }
+
+.donate-custom-field { padding-top: 0.1rem; }
+
+.donate-recurring { padding-top: 0.15rem; }
+
+.donate-fineprint {
+  color: var(--brown);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
 /* ── TRUST STRIP ── */
 .trust-strip { background: var(--white); }
 

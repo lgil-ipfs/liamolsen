@@ -360,6 +360,55 @@
       </div>
     </section>
 
+    <!-- ── DONATE ── -->
+    <section id="donate" class="section donate-section bg-beige" aria-labelledby="donate-heading">
+      <div class="container donate-grid">
+        <div class="donate-text fade-in">
+          <span class="section-label salmon">Support the Campaign</span>
+          <h2 id="donate-heading" class="h1 heading-on-light">Support Liam's campaign.</h2>
+          <span class="divider"></span>
+          <p>
+            This campaign is funded by North Vancouver residents, not developers or outside interests.
+            Every dollar goes directly toward reaching voters — door-knocking, lawn signs,
+            local events, and getting Liam's message in front of your neighbours.
+          </p>
+          <ul class="donate-trust-notes" role="list">
+            <li><span class="donate-check" aria-hidden="true">✓</span> Secure donation processing</li>
+            <li><span class="donate-check" aria-hidden="true">✓</span> Local donations support local outreach</li>
+            <li><span class="donate-check" aria-hidden="true">✓</span> Authorized by the financial agent of Liam Olsen for North Vancouver City Council</li>
+          </ul>
+        </div>
+        <div class="hs-card donate-card fade-in fade-in-delay-1">
+          <form class="donate-form" id="donate-form" novalidate aria-label="Donate to the campaign">
+            <span class="donate-form-label">Choose an amount</span>
+            <div class="donate-amounts" role="group" aria-label="Donation amount">
+              <button type="button" class="donate-amount-btn" data-amount="10">$10</button>
+              <button type="button" class="donate-amount-btn" data-amount="25">$25</button>
+              <button type="button" class="donate-amount-btn is-active" data-amount="50">$50</button>
+              <button type="button" class="donate-amount-btn" data-amount="100">$100</button>
+              <button type="button" class="donate-amount-btn donate-amount-custom" data-amount="custom">Custom</button>
+            </div>
+            <div class="hs-field donate-custom-field hidden" id="donate-custom-field">
+              <label for="donate-custom-amount">Custom amount (CAD)</label>
+              <input type="number" id="donate-custom-amount" name="custom_amount" class="hs-input" placeholder="75" min="1" step="1" inputmode="numeric" />
+            </div>
+            <label class="hs-check donate-recurring">
+              <input type="checkbox" name="recurring" id="donate-recurring" />
+              Make this a monthly donation
+            </label>
+            <!-- Payment processing not yet connected. Replace this button's
+                 behaviour with a real processor (e.g. CanadaHelps, NationBuilder,
+                 Stripe) before launch — see js/index.js for the placeholder logic. -->
+            <a href="mailto:hello@liamolsen.ca?subject=Donation%20—%20%2450" id="donate-submit" class="btn btn-blue full-width">Donate Now — $50</a>
+            <p class="donate-fineprint">
+              Online donation processing is coming soon. For now this will open an email to the campaign
+              so we can follow up on your contribution directly.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <!-- ── GET INVOLVED CTA ── -->
     <section class="cta-strip" aria-labelledby="cta-heading">
       <div class="container">
