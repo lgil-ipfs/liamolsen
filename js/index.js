@@ -47,12 +47,6 @@
       ? `Donate Now — $${amount}${recurring ? '/mo' : ''}`
       : 'Donate Now';
     submitBtn.textContent = label;
-    // Payment processor not yet connected — this mailto is a placeholder.
-    // Replace with a real donation link (CanadaHelps, NationBuilder, Stripe, etc).
-    const subject = encodeURIComponent(
-      `Donation — $${amount || ''}${recurring ? '/mo' : ''}`.trim()
-    );
-    submitBtn.href = `mailto:hello@liamolsen.ca?subject=${subject}`;
   }
 
   amountBtns.forEach(btn => {
