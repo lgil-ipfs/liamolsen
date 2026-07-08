@@ -353,55 +353,12 @@
   font-weight: 700;
 }
 
-.donate-card { background: var(--white); }
-
-.donate-form {
+.donate-card {
+  background: var(--white);
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-
-.donate-form-label {
-  font-family: var(--font-heading);
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--brown);
-}
-
-.donate-amounts {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.6rem;
-}
-@media (min-width: 420px) {
-  .donate-amounts { grid-template-columns: repeat(5, 1fr); }
-}
-
-.donate-amount-btn {
-  padding: 0.7rem 0.5rem;
-  border: 1.5px solid var(--beige);
-  border-radius: var(--radius-sm);
-  background: var(--white);
-  color: var(--black);
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 0.85rem;
-  cursor: pointer;
-  transition: border-color var(--transition), background var(--transition), color var(--transition);
-}
-.donate-amount-btn:hover { border-color: var(--teal); }
-.donate-amount-btn.is-active {
-  background: var(--teal);
-  border-color: var(--teal);
-  color: var(--white);
-}
-.donate-amount-custom { font-size: 0.75rem; }
-
-.donate-custom-field { padding-top: 0.1rem; }
-
-.donate-recurring { padding-top: 0.15rem; }
 
 .donate-fineprint {
   color: var(--brown);
