@@ -125,7 +125,7 @@
               </label>
               <label class="signup-check">
                 <input type="checkbox" name="eligible_voter" />
-                I am eligible to vote in North Vancouver. I understand that to vote in the municipal election I must be a Canadian citizen or permanent resident, be at least 18 years of age, and be a resident of the City of North Vancouver by election day.
+                I am eligible to vote in North Vancouver. I understand that to vote in the municipal election I must be a Canadian citizen or permanent resident, be at least 18 years of age, be a resident of BC for at least 6 months, and be a resident of the City of North Vancouver by election day.
               </label>
             </div>
             <button type="submit" class="btn btn-primary full-width">Sign Up</button>
@@ -160,6 +160,16 @@
             </a>
           </li>
           <li class="involvement-option fade-in fade-in-delay-1">
+            <a href="#shifts" class="involvement-option-inner">
+              <div class="involvement-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <h3 class="h4">Doorknocking Shift</h3>
+              <p>Pick a day and neighbourhood and we'll pair you with an experienced volunteer to knock doors.</p>
+              <span class="involvement-cta">Sign up for a shift →</span>
+            </a>
+          </li>
+          <li class="involvement-option fade-in fade-in-delay-2">
             <a href="#lawn-sign" class="involvement-option-inner">
               <div class="involvement-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3h18v13H3z"/><path d="M8 21h8M12 16v5"/></svg>
@@ -169,7 +179,7 @@
               <span class="involvement-cta">Request one →</span>
             </a>
           </li>
-          <li class="involvement-option fade-in fade-in-delay-2">
+          <li class="involvement-option fade-in">
             <a href="#event" class="involvement-option-inner">
               <div class="involvement-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
@@ -179,7 +189,7 @@
               <span class="involvement-cta">See events →</span>
             </a>
           </li>
-          <li class="involvement-option fade-in">
+          <li class="involvement-option fade-in fade-in-delay-1">
             <a href="#host" class="involvement-option-inner">
               <div class="involvement-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
@@ -189,7 +199,7 @@
               <span class="involvement-cta">Host one →</span>
             </a>
           </li>
-          <li class="involvement-option fade-in fade-in-delay-1">
+          <li class="involvement-option fade-in fade-in-delay-2">
             <a href="#email-signup" class="involvement-option-inner">
               <div class="involvement-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -199,7 +209,7 @@
               <span class="involvement-cta">Sign up →</span>
             </a>
           </li>
-          <li class="involvement-option fade-in fade-in-delay-2">
+          <li class="involvement-option fade-in">
             <a href="#spread-word" class="involvement-option-inner">
               <div class="involvement-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
@@ -279,6 +289,67 @@
             <div class="form-success-icon" aria-hidden="true">✓</div>
             <h3>You're in!</h3>
             <p>Thanks for signing up. We'll be in touch soon with details on how to get started. North Van is lucky to have you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DOORKNOCKING SHIFTS ── -->
+    <section id="shifts" class="section" aria-labelledby="shifts-heading">
+      <div class="container form-section">
+        <div class="form-section-intro fade-in">
+          <span class="section-label salmon">Doorknocking</span>
+          <h2 id="shifts-heading" class="h2 heading-on-light">Sign up for a doorknocking shift.</h2>
+          <span class="divider"></span>
+          <p>
+            Pick a shift that works for your schedule and we'll add you to the team.
+            You'll be paired with an experienced volunteer, and we'll send you the meeting
+            spot and details a couple of days before your shift.
+          </p>
+          <ul class="volunteer-roles">
+            <li>No experience needed — we'll walk you through it</li>
+            <li>Shifts typically run 2–3 hours</li>
+            <li>Come solo or bring a friend</li>
+          </ul>
+        </div>
+        <div class="form-section-form fade-in fade-in-delay-1">
+          <form class="campaign-form" id="shift-form" novalidate aria-label="Doorknocking shift sign-up form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="sh-first">First Name *</label>
+                <input type="text" id="sh-first" name="first_name" class="form-control" required autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label for="sh-last">Last Name *</label>
+                <input type="text" id="sh-last" name="last_name" class="form-control" required autocomplete="family-name" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="sh-email">Email Address *</label>
+              <input type="email" id="sh-email" name="email" class="form-control" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="sh-phone">Phone Number</label>
+              <input type="tel" id="sh-phone" name="phone" class="form-control" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="sh-shift">Choose a shift *</label>
+              <select id="sh-shift" name="shift" class="form-control" required>
+                <option value="">Select a shift...</option>
+                <option value="sat-am-lower-lonsdale">Saturday mornings — Lower Lonsdale</option>
+                <option value="sat-pm-central-lonsdale">Saturday afternoons — Central Lonsdale</option>
+                <option value="sun-am-lynn-valley">Sunday mornings — Lynn Valley</option>
+                <option value="weekday-pm-edgemont">Weekday evenings — Edgemont Village</option>
+                <option value="any">Not sure — sign me up for any shift</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Sign Up for a Shift</button>
+            <p class="form-note">We'll follow up with your exact meeting time and location before your shift.</p>
+          </form>
+          <div id="shift-success" class="form-success hidden">
+            <div class="form-success-icon" aria-hidden="true">✓</div>
+            <h3>You're on the schedule!</h3>
+            <p>Thanks for signing up to knock doors for Liam. We'll be in touch with your shift details soon.</p>
           </div>
         </div>
       </div>
@@ -482,7 +553,7 @@
           </div>
         </div>
         <div class="footer-col"><h4>Navigate</h4><ul><li><a href="about.html">About Liam</a></li><li><a href="why-running.html">Why I'm Running</a></li><li><a href="priorities.html">Priorities</a></li><li><a href="community.html">Community</a></li><li><a href="get-involved.html">Get Involved</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-        <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="#volunteer">Volunteer</a></li><li><a href="#lawn-sign">Lawn Sign</a></li><li><a href="#event">Attend an Event</a></li><li><a href="#host">Host a Meet & Greet</a></li><li><a href="#email-signup">Email Updates</a></li></ul></div>
+        <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="#volunteer">Volunteer</a></li><li><a href="#shifts">Doorknocking Shift</a></li><li><a href="#lawn-sign">Lawn Sign</a></li><li><a href="#event">Attend an Event</a></li><li><a href="#host">Host a Meet & Greet</a></li><li><a href="#email-signup">Email Updates</a></li></ul></div>
         <div class="footer-col"><h4>Contact</h4><p><a href="mailto:hello@liamolsen.ca">hello@liamolsen.ca</a><br /><br />North Vancouver, BC<br /><br /><a href="contact.html">Send a message →</a></p></div>
       </div>
       <div class="footer-bottom">

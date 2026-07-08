@@ -183,11 +183,61 @@
           <div class="quick-links-box">
             <h3 class="h4 heading-on-light">Quick links</h3>
             <ul class="contact-quick-links">
+              <li><a href="#petition">Sign the petition</a></li>
               <li><a href="get-involved.html#volunteer">Volunteer with the campaign</a></li>
+              <li><a href="get-involved.html#shifts">Sign up for a doorknocking shift</a></li>
               <li><a href="get-involved.html#lawn-sign">Request a lawn sign</a></li>
               <li><a href="get-involved.html#host">Host a meet & greet</a></li>
               <li><a href="get-involved.html#email-signup">Email updates</a></li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PETITION ── -->
+    <section id="petition" class="section bg-beige" aria-labelledby="petition-heading">
+      <div class="container">
+        <div class="section-intro text-center fade-in">
+          <span class="section-label salmon">Sign the Petition</span>
+          <h2 id="petition-heading" class="h2 heading-on-light">Add your name.</h2>
+          <span class="divider center"></span>
+          <p style="margin:0 auto;">
+            North Vancouver deserves a Second Narrows Bridge and real answers on the wastewater
+            treatment plant cost overruns. Add your name to call on the city and Metro Vancouver
+            to act.
+          </p>
+        </div>
+        <div class="hs-card fade-in fade-in-delay-1" style="max-width:520px; margin:var(--space-lg) auto 0;">
+          <form class="hs-form" id="petition-form" novalidate aria-label="Petition sign-up">
+            <div class="hs-row">
+              <div class="hs-field">
+                <label for="p-first">First Name</label>
+                <input type="text" id="p-first" name="first_name" class="hs-input" placeholder="Jane" required autocomplete="given-name" />
+              </div>
+              <div class="hs-field">
+                <label for="p-last">Last Name</label>
+                <input type="text" id="p-last" name="last_name" class="hs-input" placeholder="Smith" required autocomplete="family-name" />
+              </div>
+            </div>
+            <div class="hs-field">
+              <label for="p-email">Email</label>
+              <input type="email" id="p-email" name="email" class="hs-input" placeholder="jane@example.com" required autocomplete="email" />
+            </div>
+            <div class="hs-field">
+              <label for="p-postal">Postal Code</label>
+              <input type="text" id="p-postal" name="postal_code" class="hs-input" placeholder="V7M 1A1" autocomplete="postal-code" />
+            </div>
+            <div class="hs-checks">
+              <label class="hs-check"><input type="checkbox" name="lives_in_northvan" /> I live in the City of North Vancouver</label>
+              <label class="hs-check"><input type="checkbox" name="consent_email" /> I consent to receive emails from the Liam Olsen campaign</label>
+            </div>
+            <button type="submit" class="btn btn-primary full-width" style="margin-top:0.5rem;">Sign the Petition</button>
+          </form>
+          <div id="petition-success" class="hs-success hidden">
+            <div class="hs-success-icon" aria-hidden="true">✓</div>
+            <h3>Thanks for signing!</h3>
+            <p>Your name has been added. We'll keep you posted on where this goes.</p>
           </div>
         </div>
       </div>

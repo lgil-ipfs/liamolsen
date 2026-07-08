@@ -44,6 +44,7 @@
   }
 
   handleForm('volunteer-form', 'volunteer-success');
+  handleForm('shift-form', 'shift-success');
   handleForm('lawn-sign-form', 'lawn-sign-success');
 
   /* Email signup */
