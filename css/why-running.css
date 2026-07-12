@@ -82,6 +82,21 @@
   font-style: italic;
 }
 
+.letter-sig-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.letter-sig-photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+}
+
 .letter-sig {
   display: flex;
   flex-direction: column;

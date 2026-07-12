@@ -545,19 +545,13 @@
   max-width: 480px;
 }
 
-.meet-image-placeholder {
+.meet-image-img {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, var(--beige) 0%, var(--brown) 100%);
+  object-fit: cover;
+  object-position: center top;
   border-radius: var(--radius-lg);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.meet-image-inner {
-  text-align: center;
-  padding: var(--space-xl);
+  display: block;
 }
 
 .meet-image-badge {
@@ -605,14 +599,21 @@
   .community-photo:first-child { aspect-ratio: 3/4; }
 }
 
-.community-photo-fill {
+.community-photo-img {
   width: 100%;
   height: 100%;
-  position: relative;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.community-photo-fill {
+  position: absolute;
+  inset: 0;
   display: flex;
   align-items: flex-end;
   padding: var(--space-sm);
-  /* Replace inner content with actual photo using background-image + cover */
+  background: linear-gradient(transparent 55%, rgba(67,45,50,0.7));
 }
 
 .community-photo-caption {

@@ -2,6 +2,15 @@
    priorities.css — Priorities page styles
    ============================================================ */
 
+/* Photo: aerial view of the Shipyards District, North Vancouver —
+   Aaron Lee via Pexels (pexels.com/photo/26180108) */
+.page-hero::before {
+  background-image: linear-gradient(135deg, rgba(114,69,74,0.55) 0%, rgba(67,45,50,0.7) 100%), url('../imgs/shipyards-north-vancouver.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+}
+
 /* ── INTRO ── */
 .priorities-intro-grid {
   display: grid;
