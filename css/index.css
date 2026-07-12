@@ -320,37 +320,11 @@
 .hs-success h3 { color: var(--black); margin-bottom: 0.4rem; }
 .hs-success p  { color: var(--brown); font-size: 0.9rem; }
 
-/* ── DONATE ── */
-.donate-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-2xl);
-  align-items: start;
-}
-@media (min-width: 900px) {
-  .donate-grid { grid-template-columns: 1.1fr 1fr; }
-}
-
-.donate-text p { color: var(--brown); }
-
-.donate-trust-notes {
+/* ── VOLUNTEER + DONATE ── */
+.signup-donate-stack {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-  margin-top: var(--space-md);
-}
-.donate-trust-notes li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.6rem;
-  font-size: 0.92rem;
-  color: var(--black);
-  line-height: 1.5;
-}
-.donate-check {
-  flex-shrink: 0;
-  color: var(--teal);
-  font-weight: 700;
+  gap: var(--space-lg);
 }
 
 .donate-card {
@@ -358,6 +332,15 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.donate-form-label {
+  font-family: var(--font-heading);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--brown);
 }
 
 .donate-fineprint {
@@ -418,58 +401,6 @@
   opacity: 0.8;
   line-height: 1.5;
   max-width: none;
-}
-
-/* ── WHY I'M RUNNING PREVIEW ── */
-.why-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-2xl);
-  align-items: center;
-}
-@media (min-width: 960px) {
-  .why-grid { grid-template-columns: 1.2fr 1fr; }
-}
-
-.why-text h2 { margin-bottom: var(--space-sm); }
-
-.why-quote {
-  background: var(--beige);
-  border: 1px solid var(--beige);
-  border-radius: var(--radius-md);
-  padding: var(--space-xl);
-  position: relative;
-  box-shadow: var(--shadow-sm);
-}
-
-.why-quote-mark {
-  display: block;
-  font-family: Georgia, serif;
-  font-size: 5rem;
-  line-height: 1;
-  color: var(--salmon);
-  opacity: 0.5;
-  margin-bottom: -1rem;
-}
-
-.why-quote p {
-  font-size: 1.2rem;
-  font-style: italic;
-  color: var(--black);
-  line-height: 1.6;
-  font-weight: 300;
-  max-width: none;
-}
-
-.why-quote cite {
-  display: block;
-  margin-top: var(--space-md);
-  font-style: normal;
-  font-family: var(--font-heading);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: var(--teal);
 }
 
 /* ── PRIORITIES PREVIEW ── */

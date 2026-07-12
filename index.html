@@ -93,66 +93,33 @@
       </div>
     </section>
 
-    <!-- ── HOME SIGNUP ── -->
-    <section class="home-signup" aria-labelledby="home-signup-heading">
-      <div class="container">
-        <div class="home-signup-grid">
-          <div class="home-signup-intro fade-in">
-            <span class="section-label">Join the Campaign</span>
-            <h2 id="home-signup-heading" class="h2">Sign up to support Liam.</h2>
-            <span class="divider"></span>
-            <p>Whether you want to volunteer, donate, or simply stay informed — every sign-up strengthens the campaign for North Vancouver.</p>
-            <p>Fill out the form and we'll connect you with the right way to get involved.</p>
+    <!-- ── MEET LIAM ── -->
+    <section class="section meet-liam" aria-labelledby="meet-heading">
+      <div class="container meet-grid">
+        <div class="meet-image fade-in" aria-label="Photo of Liam Olsen">
+          <img src="imgs/liam-headshot-meet.jpg" alt="Liam Olsen" class="meet-image-img" />
+          <div class="meet-image-badge">
+            <img src="logos/Main 2 White Background.png" alt="" />
           </div>
-          <div class="hs-card fade-in fade-in-delay-1">
-            <form class="hs-form" id="home-signup-form" novalidate aria-label="Campaign sign-up">
-              <div class="hs-row">
-                <div class="hs-field">
-                  <label for="hs-first">First Name</label>
-                  <input type="text" id="hs-first" name="first_name" class="hs-input" placeholder="Jane" required autocomplete="given-name" />
-                </div>
-                <div class="hs-field">
-                  <label for="hs-last">Last Name</label>
-                  <input type="text" id="hs-last" name="last_name" class="hs-input" placeholder="Smith" required autocomplete="family-name" />
-                </div>
-              </div>
-              <div class="hs-field">
-                <label for="hs-email">Email</label>
-                <input type="email" id="hs-email" name="email" class="hs-input" placeholder="jane@example.com" required autocomplete="email" />
-              </div>
-              <div class="hs-field">
-                <label for="hs-address">Address</label>
-                <input type="text" id="hs-address" name="address" class="hs-input" placeholder="123 Main St" autocomplete="street-address" />
-              </div>
-              <div class="hs-row">
-                <div class="hs-field">
-                  <label for="hs-postal">Postal Code</label>
-                  <input type="text" id="hs-postal" name="postal_code" class="hs-input" placeholder="V7M 1A1" autocomplete="postal-code" />
-                </div>
-                <div class="hs-field">
-                  <label for="hs-phone">Phone Number</label>
-                  <input type="tel" id="hs-phone" name="phone" class="hs-input" placeholder="(604) 555-0000" autocomplete="tel" />
-                </div>
-              </div>
-              <div class="hs-field">
-                <label for="hs-birthday">Birthday (DD/MM/YYYY)</label>
-                <input type="text" id="hs-birthday" name="birthday" class="hs-input" placeholder="31/12/1990" />
-              </div>
-              <div class="hs-checks">
-                <label class="hs-check"><input type="checkbox" name="consent_email" /> I consent to receive emails from the Liam Olsen campaign</label>
-                <label class="hs-check"><input type="checkbox" name="volunteer" /> I would like to volunteer</label>
-                <label class="hs-check"><input type="checkbox" name="donate" /> I would like to donate</label>
-                <label class="hs-check"><input type="checkbox" name="lives_in_northvan" /> I live in the City of North Vancouver</label>
-                <label class="hs-check"><input type="checkbox" name="eligible_voter" /> I am eligible to vote in North Vancouver. I understand that to vote in the municipal election I must be a Canadian citizen or permanent resident, at least 18 years of age, a resident of BC for at least 6 months, and a resident of the City of North Vancouver by election day.</label>
-              </div>
-              <button type="submit" class="btn btn-primary full-width" style="margin-top:0.5rem;">Sign Up</button>
-            </form>
-            <div id="home-signup-success" class="hs-success hidden">
-              <div class="hs-success-icon" aria-hidden="true">✓</div>
-              <h3>You're signed up!</h3>
-              <p>Thanks for joining the campaign. We'll be in touch soon.</p>
-            </div>
-          </div>
+        </div>
+        <div class="meet-text fade-in fade-in-delay-1">
+          <span class="section-label">Meet Liam</span>
+          <h2 id="meet-heading" class="h1 heading-on-light">A North Van voice through and through.</h2>
+          <span class="divider"></span>
+          <p>
+            Liam Olsen is a North Vancouver local with deep roots in this community
+            and a professional background in public policy and civic organizing.
+            He served as <strong>National Youth Director for the Liberal Party of Canada
+            under Prime Minister Mark Carney</strong> — bringing national-level leadership
+            experience back home to North Van.
+          </p>
+          <p>
+            Liam brings a grounded, practical approach to leadership: listen first,
+            work across differences, and stay focused on outcomes that matter to residents.
+            He's running for City Council because he believes North Vancouver is best served
+            by someone who lives and breathes this place.
+          </p>
+          <a href="about.html" class="btn btn-primary mt-lg">Full Biography</a>
         </div>
       </div>
     </section>
@@ -198,64 +165,6 @@
             </div>
           </li>
         </ul>
-      </div>
-    </section>
-
-    <!-- ── DONATE ── -->
-    <section id="donate" class="section donate-section bg-beige" aria-labelledby="donate-heading">
-      <div class="container donate-grid">
-        <div class="donate-text fade-in">
-          <span class="section-label salmon">Support the Campaign</span>
-          <h2 id="donate-heading" class="h1 heading-on-light">Support Liam's campaign.</h2>
-          <span class="divider"></span>
-          <p>
-            This campaign is funded by North Vancouver residents for North Vancouver residents.
-            Every dollar helps get Liam's message in front of North Vancouver residents. With your help,
-            we can break the culture of complacency and build a more convenient, affordable, and
-            liveable city for generations to come.
-          </p>
-          <ul class="donate-trust-notes" role="list">
-            <li><span class="donate-check" aria-hidden="true">✓</span> Secure donation processing</li>
-            <li><span class="donate-check" aria-hidden="true">✓</span> Local donations support local outreach</li>
-            <li><span class="donate-check" aria-hidden="true">✓</span> Authorized by the financial agent of Liam Olsen for North Vancouver City Council</li>
-          </ul>
-        </div>
-        <div class="hs-card donate-card fade-in fade-in-delay-1">
-          <a href="https://www.zeffy.com/en-CA/donation-form/donate-for-a-better-north-vancouver" id="donate-submit" class="btn btn-blue full-width" target="_blank" rel="noopener noreferrer">Donate</a>
-          <p class="donate-fineprint">
-            You'll be taken to our secure donation page, powered by Zeffy, to complete your donation.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── WHY I'M RUNNING ── -->
-    <section class="section why-preview" aria-labelledby="why-heading">
-      <div class="container why-grid">
-        <div class="why-text fade-in">
-          <span class="section-label">Why I'm Running</span>
-          <h2 id="why-heading" class="h1 heading-on-light">North Vancouver deserves a council that listens.</h2>
-          <span class="divider"></span>
-          <p>
-            I grew up watching this city grow and change — and I've been part of shaping it.
-            I'm running because I believe local government should be close to the people it serves.
-            Decisions about our neighbourhoods, our community spaces, and our future shouldn't feel
-            distant or disconnected.
-          </p>
-          <p>
-            North Vancouver has real strengths and real pressures. I want to bring practical,
-            grounded leadership to city hall — someone who has done the work,
-            knows the community, and will show up every time.
-          </p>
-          <a href="why-running.html" class="btn btn-outline-salmon mt-lg">Read My Full Statement</a>
-        </div>
-        <div class="why-visual fade-in fade-in-delay-1" aria-hidden="true">
-          <div class="why-quote">
-            <span class="why-quote-mark" aria-hidden="true">&ldquo;</span>
-            <p>We can replace the culture of complacency with the culture of courage. We just need to be bold enough to demand it.</p>
-            <cite>— Liam Olsen</cite>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -308,37 +217,6 @@
       </div>
     </section>
 
-    <!-- ── MEET LIAM ── -->
-    <section class="section meet-liam" aria-labelledby="meet-heading">
-      <div class="container meet-grid">
-        <div class="meet-image fade-in" aria-label="Photo of Liam Olsen">
-          <img src="imgs/liam-headshot-meet.jpg" alt="Liam Olsen" class="meet-image-img" />
-          <div class="meet-image-badge">
-            <img src="logos/Main 2 White Background.png" alt="" />
-          </div>
-        </div>
-        <div class="meet-text fade-in fade-in-delay-1">
-          <span class="section-label">Meet Liam</span>
-          <h2 id="meet-heading" class="h1 heading-on-light">A North Van voice through and through.</h2>
-          <span class="divider"></span>
-          <p>
-            Liam Olsen is a North Vancouver local with deep roots in this community
-            and a professional background in public policy and civic organizing.
-            He served as <strong>National Youth Director for the Liberal Party of Canada
-            under Prime Minister Mark Carney</strong> — bringing national-level leadership
-            experience back home to North Van.
-          </p>
-          <p>
-            Liam brings a grounded, practical approach to leadership: listen first,
-            work across differences, and stay focused on outcomes that matter to residents.
-            He's running for City Council because he believes North Vancouver is best served
-            by someone who lives and breathes this place.
-          </p>
-          <a href="about.html" class="btn btn-primary mt-lg">Full Biography</a>
-        </div>
-      </div>
-    </section>
-
     <!-- ── COMMUNITY PRESENCE ── -->
     <section class="section community-preview bg-beige" aria-labelledby="community-heading">
       <div class="container">
@@ -382,22 +260,6 @@
       </div>
     </section>
 
-    <!-- ── GET INVOLVED CTA ── -->
-    <section class="cta-strip" aria-labelledby="cta-heading">
-      <div class="container">
-        <div class="fade-in">
-          <h2 id="cta-heading">Ready to make a difference in North Van?</h2>
-          <p>This campaign is built by neighbours, for neighbours. Every conversation counts — and yours matters.</p>
-          <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-            <a href="https://www.zeffy.com/en-CA/donation-form/donate-for-a-better-north-vancouver" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer">Donate</a>
-            <a href="get-involved.html" class="btn btn-outline-light">Volunteer</a>
-            <a href="get-involved.html#lawn-sign" class="btn btn-outline-light">Get a Lawn Sign</a>
-            <a href="get-involved.html#email-signup" class="btn btn-outline-light">Stay in the Loop</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ── UPDATES ── -->
     <section class="section updates" aria-labelledby="updates-heading">
       <div class="container">
@@ -424,6 +286,80 @@
             <p>From doorknocking to event helping to spreading the word online — there's a role for everyone who wants to get involved.</p>
             <a href="get-involved.html" class="priority-link">Sign up →</a>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VOLUNTEER + DONATE ── -->
+    <section id="get-involved" class="home-signup" aria-labelledby="get-involved-heading">
+      <div class="container">
+        <div class="home-signup-grid">
+          <div class="home-signup-intro fade-in">
+            <span class="section-label">Join the Campaign</span>
+            <h2 id="get-involved-heading" class="h2">Volunteer or donate today.</h2>
+            <span class="divider"></span>
+            <p>Whether you want to volunteer, donate, or simply stay informed — every sign-up strengthens the campaign for North Vancouver.</p>
+            <p>Fill out the form to join the team, or make a secure donation below.</p>
+          </div>
+          <div class="signup-donate-stack fade-in fade-in-delay-1">
+            <div class="hs-card">
+              <form class="hs-form" id="home-signup-form" novalidate aria-label="Campaign sign-up">
+                <div class="hs-row">
+                  <div class="hs-field">
+                    <label for="hs-first">First Name</label>
+                    <input type="text" id="hs-first" name="first_name" class="hs-input" placeholder="Jane" required autocomplete="given-name" />
+                  </div>
+                  <div class="hs-field">
+                    <label for="hs-last">Last Name</label>
+                    <input type="text" id="hs-last" name="last_name" class="hs-input" placeholder="Smith" required autocomplete="family-name" />
+                  </div>
+                </div>
+                <div class="hs-field">
+                  <label for="hs-email">Email</label>
+                  <input type="email" id="hs-email" name="email" class="hs-input" placeholder="jane@example.com" required autocomplete="email" />
+                </div>
+                <div class="hs-field">
+                  <label for="hs-address">Address</label>
+                  <input type="text" id="hs-address" name="address" class="hs-input" placeholder="123 Main St" autocomplete="street-address" />
+                </div>
+                <div class="hs-row">
+                  <div class="hs-field">
+                    <label for="hs-postal">Postal Code</label>
+                    <input type="text" id="hs-postal" name="postal_code" class="hs-input" placeholder="V7M 1A1" autocomplete="postal-code" />
+                  </div>
+                  <div class="hs-field">
+                    <label for="hs-phone">Phone Number</label>
+                    <input type="tel" id="hs-phone" name="phone" class="hs-input" placeholder="(604) 555-0000" autocomplete="tel" />
+                  </div>
+                </div>
+                <div class="hs-field">
+                  <label for="hs-birthday">Birthday (DD/MM/YYYY)</label>
+                  <input type="text" id="hs-birthday" name="birthday" class="hs-input" placeholder="31/12/1990" />
+                </div>
+                <div class="hs-checks">
+                  <label class="hs-check"><input type="checkbox" name="consent_email" /> I consent to receive emails from the Liam Olsen campaign</label>
+                  <label class="hs-check"><input type="checkbox" name="volunteer" /> I would like to volunteer</label>
+                  <label class="hs-check"><input type="checkbox" name="donate" /> I would like to donate</label>
+                  <label class="hs-check"><input type="checkbox" name="lives_in_northvan" /> I live in the City of North Vancouver</label>
+                  <label class="hs-check"><input type="checkbox" name="eligible_voter" /> I am eligible to vote in North Vancouver. I understand that to vote in the municipal election I must be a Canadian citizen or permanent resident, at least 18 years of age, a resident of BC for at least 6 months, and a resident of the City of North Vancouver by election day.</label>
+                </div>
+                <button type="submit" class="btn btn-primary full-width" style="margin-top:0.5rem;">Sign Up</button>
+              </form>
+              <div id="home-signup-success" class="hs-success hidden">
+                <div class="hs-success-icon" aria-hidden="true">✓</div>
+                <h3>You're signed up!</h3>
+                <p>Thanks for joining the campaign. We'll be in touch soon.</p>
+              </div>
+            </div>
+            <div class="hs-card donate-card">
+              <span class="donate-form-label">Support the Campaign</span>
+              <a href="https://www.zeffy.com/en-CA/donation-form/donate-for-a-better-north-vancouver" id="donate-submit" class="btn btn-blue full-width" target="_blank" rel="noopener noreferrer">Donate</a>
+              <p class="donate-fineprint">
+                You'll be taken to our secure donation page, powered by Zeffy, to complete your donation.
+                Authorized by the financial agent of Liam Olsen for North Vancouver City Council.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
