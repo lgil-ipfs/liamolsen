@@ -73,7 +73,8 @@
       <div class="container">
         <div class="signup-wrap fade-in">
           <h2 id="signup-heading" class="signup-title">Sign Up to Support Liam</h2>
-          <form class="signup-form" id="signup-form" novalidate aria-label="Campaign sign-up form">
+          <form class="signup-form" id="signup-form" novalidate aria-label="Campaign sign-up form" action="https://formspree.io/f/mbdnjjaz" method="POST">
+            <input type="hidden" name="_subject" value="New volunteer sign-up — Get Involved page" />
             <div class="signup-row">
               <div class="signup-field">
                 <label for="s-first">First Name</label>
@@ -129,8 +130,9 @@
               </label>
             </div>
             <button type="submit" class="btn btn-primary full-width">Sign Up</button>
+            <p class="form-error-message hidden" role="alert">Something went wrong sending your sign-up. Please try again, or email us directly at <a href="mailto:hello@liamolsen.ca">hello@liamolsen.ca</a>.</p>
           </form>
-          <div id="signup-success" class="signup-success hidden">
+          <div id="signup-success" class="signup-success hidden" tabindex="-1">
             <div class="signup-success-icon" aria-hidden="true">✓</div>
             <h3>Thanks for signing up!</h3>
             <p>We'll be in touch soon. Welcome to the campaign.</p>
@@ -244,7 +246,8 @@
           </ul>
         </div>
         <div class="form-section-form fade-in fade-in-delay-1">
-          <form class="campaign-form" id="volunteer-form" novalidate aria-label="Volunteer sign-up form">
+          <form class="campaign-form" id="volunteer-form" novalidate aria-label="Volunteer sign-up form" action="https://formspree.io/f/mbdnjjaz" method="POST">
+            <input type="hidden" name="_subject" value="New volunteer interest form — Get Involved page" />
             <div class="form-row">
               <div class="form-group">
                 <label for="v-first">First Name *</label>
@@ -284,8 +287,9 @@
             </div>
             <button type="submit" class="btn btn-primary full-width">Sign Up to Volunteer</button>
             <p class="form-note">We'll reach out within a day or two to connect you with the right role.</p>
+            <p class="form-error-message hidden" role="alert">Something went wrong sending your sign-up. Please try again, or email us directly at <a href="mailto:hello@liamolsen.ca">hello@liamolsen.ca</a>.</p>
           </form>
-          <div id="volunteer-success" class="form-success hidden">
+          <div id="volunteer-success" class="form-success hidden" tabindex="-1">
             <div class="form-success-icon" aria-hidden="true">✓</div>
             <h3>You're in!</h3>
             <p>Thanks for signing up. We'll be in touch soon with details on how to get started. North Van is lucky to have you.</p>

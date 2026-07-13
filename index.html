@@ -303,7 +303,8 @@
           </div>
           <div class="signup-donate-stack fade-in fade-in-delay-1">
             <div class="hs-card">
-              <form class="hs-form" id="home-signup-form" novalidate aria-label="Campaign sign-up">
+              <form class="hs-form" id="home-signup-form" novalidate aria-label="Campaign sign-up" action="https://formspree.io/f/mbdnjjaz" method="POST">
+                <input type="hidden" name="_subject" value="New volunteer sign-up — Homepage" />
                 <div class="hs-row">
                   <div class="hs-field">
                     <label for="hs-first">First Name</label>
@@ -344,8 +345,9 @@
                   <label class="hs-check"><input type="checkbox" name="eligible_voter" /> I am eligible to vote in North Vancouver. I understand that to vote in the municipal election I must be a Canadian citizen or permanent resident, at least 18 years of age, a resident of BC for at least 6 months, and a resident of the City of North Vancouver by election day.</label>
                 </div>
                 <button type="submit" class="btn btn-primary full-width" style="margin-top:0.5rem;">Sign Up</button>
+                <p class="form-error-message hidden" role="alert">Something went wrong sending your sign-up. Please try again, or email us directly at <a href="mailto:hello@liamolsen.ca">hello@liamolsen.ca</a>.</p>
               </form>
-              <div id="home-signup-success" class="hs-success hidden">
+              <div id="home-signup-success" class="hs-success hidden" tabindex="-1">
                 <div class="hs-success-icon" aria-hidden="true">✓</div>
                 <h3>You're signed up!</h3>
                 <p>Thanks for joining the campaign. We'll be in touch soon.</p>
