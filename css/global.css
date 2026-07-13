@@ -509,6 +509,28 @@ p + p { margin-top: 1em; }
   height: 16px;
   fill: currentColor;
 }
+.footer-land-ack {
+  border-top: 1px solid rgba(238,202,196,0.15);
+  padding-top: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+.footer-land-ack h4 {
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--salmon);
+  margin-bottom: var(--space-sm);
+}
+.footer-land-ack p {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--beige);
+  opacity: 0.8;
+  max-width: 72ch;
+}
+
 .footer-bottom {
   border-top: 1px solid rgba(238,202,196,0.15);
   padding-top: var(--space-md);
